@@ -1,4 +1,5 @@
 # syntax=docker/dockerfile:1
+# test comment
 
 FROM tensorflow/tensorflow:latest-gpu
 
