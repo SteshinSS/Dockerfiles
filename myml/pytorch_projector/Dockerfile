@@ -9,6 +9,7 @@ RUN apt-get update && apt-get install -y \
 	git \
 	vim \
 	sudo \
+	wget \
 # Need this for projector
 	python3 python3-pip python3-cryptography \ 
 	less libxext6 libxrender1 libxtst6 libfreetype6 libxi6

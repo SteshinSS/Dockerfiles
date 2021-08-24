@@ -7,7 +7,8 @@ FROM pytorch/pytorch:1.9.0-cuda11.1-cudnn8-runtime
 RUN apt-get update && apt-get install -y \
 	git \
 	vim \
-	sudo
+	sudo \
+	wget
 
 
 # Create a sudo user myml

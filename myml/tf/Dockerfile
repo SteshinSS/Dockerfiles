@@ -7,7 +7,8 @@ FROM tensorflow/tensorflow:latest-gpu
 RUN apt-get update && apt-get install -y \
 	git \
 	vim \
-	sudo
+	sudo \
+	wget
 
 
 # Create a sudo user myml
