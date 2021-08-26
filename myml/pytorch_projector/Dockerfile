@@ -1,5 +1,5 @@
 # syntax=docker/dockerfile:1
-# To use the projector, mount volume to /home/myml/.projector
+# I do not support this Dockerfile anymore
 
 FROM pytorch/pytorch:1.9.0-cuda11.1-cudnn8-runtime
 
