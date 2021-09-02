@@ -8,7 +8,8 @@ RUN apt-get update && apt-get install -y \
 	git \
 	vim \
 	sudo \
-	wget
+	wget \
+    tar
 
 
 # Create a sudo user myml
@@ -26,7 +27,7 @@ ENV PATH="/home/myml/.local/bin:${PATH}"
 
 # Install packages
 RUN python -m pip install --upgrade pip \
-    && pip3 install --user --upgrade numpy scipy matplotlib ipython jupyterlab jupyter pandas scikit-learn seaborn requests pytest pylint einops \
+    && pip3 install --user --upgrade numpy scipy matplotlib ipython jupyterlab jupyter pandas scikit-learn seaborn requests pytest pylint einops autopep8 \
     && pip3 install --user --upgrade wandb gensim spacy nltk \
     && python -m ipykernel install --user --display-name ipykernel
 
